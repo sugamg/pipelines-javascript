@@ -22,6 +22,6 @@ steps:
 
 - task: npmAuthenticate@0
   inputs:
-    workingFile: '$(solutionDir)\.npmrc'
+    workingFile: '$(Build.SourcesDirectory)\.npmrc'
 
 - script: npm ci
