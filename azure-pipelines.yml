@@ -23,5 +23,6 @@ steps:
 - task: npmAuthenticate@0
   inputs:
     workingFile: '$(Build.SourcesDirectory)\.npmrc'
-- script: vsts-npm-auth -config .npmrc
+    customEndpoint: npmfeed
+- script: vsts-npm-auth -config $(Build.SourcesDirectory)\.npmrc
 - script: npm install
