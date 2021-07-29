@@ -24,5 +24,4 @@ steps:
   inputs:
     workingFile: '$(Build.SourcesDirectory)\.npmrc'
     customEndpoint: npmfeed
-- script: vsts-npm-auth -config $(Build.SourcesDirectory)\.npmrc
 - script: npm install
