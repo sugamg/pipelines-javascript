@@ -19,7 +19,9 @@ steps:
     versionSpec: '12.x'
   displayName: 'Install Node.js'
 
-- task: Npm@1
+
+- task: npmAuthenticate@0
   inputs:
-     command: 'install'
-  displayName: 'npm install'
+    workingFile: '$(solutionDir)\.npmrc'
+
+- script: npm ci
