@@ -7,12 +7,16 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: vs2017-win2016
+
+variables:
+- name: solutionDir
+  value: '$(Build.SourcesDirectory)\pipelines-javascript'
 
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '12.x'
   displayName: 'Install Node.js'
 
 - script: |
