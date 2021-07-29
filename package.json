@@ -8,9 +8,7 @@
     "name": "",
     "email": ""
   },
-  "dependencies": {
-    "vue": "^2.5.2"
-  },
+
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-mocha": "^2.2.0",
