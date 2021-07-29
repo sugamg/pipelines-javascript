@@ -9,8 +9,6 @@
     "email": ""
   },
   "dependencies": {
-    "express": "^4.13.3",
-    "mocha": "^3.0.0",
     "vue": "^2.5.2"
   },
   "devDependencies": {
