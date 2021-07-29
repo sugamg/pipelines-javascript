@@ -8,7 +8,7 @@
     "name": "",
     "email": ""
   },
-    "dependencies": {
+  "dependencies": {
     "vue": "^2.5.2"
     "express": "^4.13.3",
     "mocha": "^3.0.0",
