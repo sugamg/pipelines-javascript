@@ -9,6 +9,9 @@ trigger:
 schedules:
 - cron: '*/5 * * * *'
   displayName: 'Every 5 minutes'
+  branches:
+    include:
+    - master
 
 pool:
   vmImage: vs2017-win2016
