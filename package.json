@@ -48,7 +48,6 @@
         "@angular/platform-browser-dynamic": "~10.1.6",
         "@angular/router": "~10.1.6",
         "@angular/upgrade": "~10.1.6",
-        "@aya/controls": "^6.6.0-21050701",
         "@google/markerclustererplus": "~2.1.11",
         "@material/grid-list": "~4.0.0",
         "@ngrx/effects": "~10.0.1",
