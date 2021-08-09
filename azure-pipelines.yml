@@ -8,7 +8,7 @@ trigger:
 
 schedules:
 - cron: '*/15 * * * *'
-  displayName: 'Every 5 minutes'
+  displayName: 'Every 15 minutes'
   branches:
     include:
     - master
