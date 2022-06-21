@@ -6,30 +6,16 @@
 trigger:
 - master
 
-schedules:
-- cron: '*/15 * * * *'
-  displayName: 'Every 15 minutes'
-  branches:
-    include:
-    - master
-  always: true
-
 pool:
-  vmImage: vs2017-win2016
-
-variables:
-- name: solutionDir
-  value: '$(Build.SourcesDirectory)\pipelines-javascript'
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '12.x'
+    versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-
-- task: npmAuthenticate@0
-  inputs:
-    workingFile: '$(Build.SourcesDirectory)\.npmrc'
-
-- script: npm install
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
